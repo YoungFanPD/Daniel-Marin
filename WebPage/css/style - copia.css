@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration:none;
+    color: white;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    background: url('../img/sidebar.png');
+    background-size: cover;
+    width: 230px;
+    color: white;
+  }
+  .sidebar-items {
+    text-align: center;
+  }
+  .logo-sidebar {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 60px;
+  }
+  .logo-sidebar img {
+    height: 200px;
+    border: 5px solid;
+    border-color: #000000;
+    margin: 10px;
+  }
+  .item {
+    margin-bottom:30px;
+    font-size: 20px;
+  }
+
+  .main {
+    margin-left: 230px;
+  }
+  .cover{
+    position: relative;
+    height: 630px;
+    background-image: url("https://cdn.pixabay.com/photo/2019/09/11/02/23/hongkong-4467663_960_720.jpg");
+    background-size: cover;
+  }
+  .overlay {
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .text-cover {
+    padding-top:150px;
+    font-size: 60px;
+  }
+  .title-cover {
+    color: white;
+    text-align: center;
+  }
+  .icons-cover {
+    text-align: center;
+  }
+  .icon {
+    margin: 30px;
+    display: inline-block;
+  }
+  .icon img{
+    height: 70px;
+    
+  }
+  .button {
+    border: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin: 10px;
+    color: #ffffff;
+  }
+  .btn-blue{
+    border-color:#0294A5;
+    background-color: #0294A5;
+  }
+  .btn-blue:hover {
+    background-color: #10F3E2;
+  }
+  .btn-light-blue{
+    border-color: #05ACD3;
+    background-color: #05ACD3;
+  }
+  .btn-light-blue:hover{
+    background-color:#e6e91b;
+  }
+  .btn-green{
+    border-color: #0bc0b1;
+    background-color: #0bc0b1;
+  }
+  .btn-green:hover{
+    background-color: #85F03C;
+  }
+  .btn-dark-purple {
+    border-color: #1f1641;
+    background-color:  #1f1641;
+  }
+  .btn-dark-purple:hover {
+    background-color: #AB47BC;
+    color: #FFFFFF;
+  }
+  .btn-dark-blue {
+    border-color: #012172;
+    background-color: #012172;
+  }
+  .btn-dark-blue:hover {
+    background-color: #764bec;
+  }
+  
+  .card {
+    height: 100%;
+    margin: .7rem;
+    background-color: white; 
+  }
+  
+  .box-row {
+    text-align: left;
+    height: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(8, 11, 168, 0.3);
+    font-size: 15px;
+  }
+
+  /*HELPERS*/
+  .space-top {
+    margin-top: 60px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .font-medium {
+    font-size: 40px;
+  }
+  .font-small {
+    font-size: 20px;
+  }
+  .img-rounded {
+    border-radius: 50%;
+  }
+  @media(min-width: 700px) {
+    .sidebar {
+      width: 150px;
+    }
+    .logo-sidebar img {
+      height: 100px;
+    }
+    .item {
+      font-size: 15px;
+      margin-bottom: 35px;
+    }
+    .main {
+      margin-left: 150px;
+    }
+    .cover {
+      height: 400px;
+    }
+    .text-cover {
+      font-size: 30px;
+    }
+    .icon img{
+      height: 40px;
+      
+    }
+    .box-card {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    .box-row {
+      text-align: center;
+    }
+
+  }

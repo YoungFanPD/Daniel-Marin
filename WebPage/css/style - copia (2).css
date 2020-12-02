@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*SIDEBAR*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    background: url('../img/sidebar.png');
+    background-size: cover;
+    width: 150px;
+    color: white;
+}
+
+.sidebar-items {
+    text-align: center;
+}
+
+.logo-sidebar {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.logo-sidebar img {
+    height: 100px;
+    border: 5px solid;
+    border-color: #000000;
+    margin: 10px;
+}
+
+.item {
+    font-size: 15px;
+    margin-bottom: 35px;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+
+/*BANNER-COVER*/
+
+.cover {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2019/09/11/02/23/hongkong-4467663_960_720.jpg");
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.text-cover {
+    padding-top: 70px;
+    font-size: 25px;
+}
+
+.title-cover {
+    color: white;
+    text-align: center;
+}
+
+.icons-cover {
+    text-align: center;
+}
+
+.icon {
+    margin: 15px;
+    display: inline-block;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.icon img {
+    height: 30px;
+}
+
+
+/*COMPONENTS*/
+
+.button {
+    border: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin: 10px;
+    color: #ffffff;
+}
+
+.btn-blue {
+    border-color: #0294A5;
+    background-color: #0294A5;
+}
+
+.btn-blue:hover {
+    background-color: #10F3E2;
+}
+
+.btn-light-blue {
+    border-color: #05ACD3;
+    background-color: #05ACD3;
+}
+
+.btn-light-blue:hover {
+    background-color: #e6e91b;
+}
+
+.btn-green {
+    border-color: #0bc0b1;
+    background-color: #0bc0b1;
+}
+
+.btn-green:hover {
+    background-color: #85F03C;
+}
+
+.btn-dark-purple {
+    border-color: #1f1641;
+    background-color: #1f1641;
+}
+
+.btn-dark-purple:hover {
+    background-color: #AB47BC;
+    color: #FFFFFF;
+}
+
+.btn-dark-blue {
+    border-color: #012172;
+    background-color: #012172;
+}
+
+.btn-dark-blue:hover {
+    background-color: #764bec;
+}
+
+.btn-download {
+    height: 40px;
+    border-color: #1f1641;
+    background-color: #1f1641;
+}
+
+.card {
+    height: 100%;
+    margin: .7rem;
+    background-color: white;
+}
+
+.header-card {
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+.body-card {
+    padding: 1.25rem;
+}
+
+.box-row {
+    text-align: center;
+    height: 35px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(8, 11, 168, 0.3);
+    font-size: 15px;
+}
+
+.card-img {
+    display: inline;
+}
+
+.body-card-img {
+    font-size: 10px;
+}
+
+.icon-card-img img {
+    height: 40px;
+}
+
+.icon-card-img {
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.icon-card-img:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+
+/*HELPERS*/
+
+.bg-gray {
+    background-color: rgba(224, 224, 224, 0.2);
+}
+
+.space-top {
+    margin-top: 60px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-medium {
+    font-size: 40px;
+}
+
+.font-small {
+    font-size: 30px;
+}
+
+.img-rounded {
+    border-radius: 50%;
+}
+
+.transparency {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+@media(min-width: 992px) {
+    .sidebar {
+        width: 230px;
+        display: inline-block;
+    }
+    .logo-sidebar img {
+        height: 150px;
+    }
+    .item {
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+    .main {
+        margin-left: 230px;
+    }
+    .cover {
+        height: 630px;
+    }
+    .text-cover {
+        padding-top: 150px;
+        font-size: 60px;
+    }
+    .icon img {
+        height: 70px;
+    }
+    .box-card {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .box-row {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .font-medium {
+        font-size: 40px;
+    }
+}
